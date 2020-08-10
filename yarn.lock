@@ -1023,11 +1023,6 @@ anymatch@^2.0.0:
     micromatch "^3.1.4"
     normalize-path "^2.1.1"
 
-app.css@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/app.css/-/app.css-0.1.2.tgz#e4e60a4a806641566545feaa4f1a77799da0140f"
-  integrity sha1-5OYKSoBmQVZlRf6qTxp3eZ2gFA8=
-
 argparse@^1.0.7:
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/argparse/-/argparse-1.0.10.tgz#bcd6791ea5ae09725e17e5ad988134cd40b3d911"
