@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "npm run cleanup && parcel build index.html",
-    "cleanup": "rimraf dist"
+    "build": "npm run cleanup && parcel build index.html -d public",
+    "cleanup": "rimraf public"
   },
   "devDependencies": {
     "parcel": "^1.12.4",
