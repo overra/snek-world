@@ -1,10 +1,10 @@
 body {
-    margin: 0;
-    background-color: #ccc;
+  margin: 0;
+  background-color: #ccc;
 }
 
 #snek,
 #snek > canvas {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
