@@ -10,9 +10,8 @@
 ## TODOs
 
 - Rewrite with xstate
-- Start screen
-- Game over screen
 - Leaderboard
 - Procedural world
 - Portals
 - Special items (speed boost, eat rocks)
+- Bugfix: prevent food from spawning in rocks

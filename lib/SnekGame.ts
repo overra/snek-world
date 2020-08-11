@@ -54,7 +54,11 @@ export class SnekGame {
           (food) => food.x === head.x && food.y === head.y,
         );
         if (foodIndex >= 0) {
-          this.foods = this.generateRandomPoints();
+          this.foods = [
+            ...this.foods.slice(0, foodIndex),
+            ...this.foods.slice(foodIndex + 1),
+            ...this.generateRandomPoints(),
+          ];
           this.parts[this.parts.length] = this.parts[this.parts.length - 1];
         }
       },
@@ -125,8 +129,8 @@ export class SnekGame {
     this.state = SnekGameState.RUNNING;
     this.parts = this.initialParts;
     this.direction = Direction.UP;
-    this.foods = this.generateRandomPoints();
-    this.rocks = this.generateRandomPoints(4);
+    this.foods = this.generateRandomPoints(40);
+    this.rocks = this.generateRandomPoints(100);
   }
 
   private get midX() {

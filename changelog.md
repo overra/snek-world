@@ -6,6 +6,7 @@
 - Press space to pause the game
 - Replace `running` boolean with `state` that can be `HOME | RUNNING | PAUSE | GAME_OVER`
 - Double resolution of canvas
+- Increase food and rock count
 
 ## 0.1.1
 
