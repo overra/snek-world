@@ -1,9 +1,10 @@
 {
   "name": "snek-world",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "dev": "parcel serve index.html -d public",
     "build": "npm run cleanup && parcel build index.html -d public",
     "cleanup": "rimraf public"
   },
