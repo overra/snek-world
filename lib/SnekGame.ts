@@ -142,13 +142,23 @@ export class SnekGame {
   private handleKeyPress(event: KeyboardEvent) {
     switch (event.key) {
       case "ArrowDown":
-        return (this.direction = Direction.DOWN);
+        return (
+          this.direction === Direction.UP || (this.direction = Direction.DOWN)
+        );
       case "ArrowUp":
-        return (this.direction = Direction.UP);
+        return (
+          this.direction === Direction.DOWN || (this.direction = Direction.UP)
+        );
       case "ArrowLeft":
-        return (this.direction = Direction.LEFT);
+        return (
+          this.direction === Direction.RIGHT ||
+          (this.direction = Direction.LEFT)
+        );
       case "ArrowRight":
-        return (this.direction = Direction.RIGHT);
+        return (
+          this.direction === Direction.LEFT ||
+          (this.direction = Direction.RIGHT)
+        );
       case " ": // Space
         return !this.running && this.startGame();
     }
